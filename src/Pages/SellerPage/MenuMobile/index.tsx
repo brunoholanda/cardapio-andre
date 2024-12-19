@@ -14,7 +14,7 @@ function MenuMobile() {
   return (
     <S.StyledHeader>
       <S.MenuIcon onClick={() => setIsOpen(!isOpen)}>&#9776;</S.MenuIcon>
-      
+
       {/* Botão de Login */}
       <S.LoginButton to="/login">Entrar</S.LoginButton>
 
@@ -25,14 +25,14 @@ function MenuMobile() {
         </S.MenuBar>
 
         <S.ButtonsContainer>
-          <S.NavButton to="/register">Cadastrar</S.NavButton>
+          <S.NavButton to="/cadastro">Cadastrar</S.NavButton>
           <S.NavButton to="/login">Entrar</S.NavButton>
         </S.ButtonsContainer>
 
         <S.StyledLink to="#cadastro" onClick={() => setIsOpen(false)}>Sobre Nós</S.StyledLink>
         <S.StyledLink to="#gerar-qrcode" onClick={() => setIsOpen(false)}>Teste Grátis</S.StyledLink>
         <S.StyledLink to="#contato" onClick={() => setIsOpen(false)}>Fale Conosco</S.StyledLink>
-      <img src={logo} alt="logomarca do sistema tipagem com hamburguer e o nome cardapix" />
+        <img src={logo} alt="logomarca do sistema tipagem com hamburguer e o nome cardapix" />
       </S.StyledNav>
     </S.StyledHeader>
   );

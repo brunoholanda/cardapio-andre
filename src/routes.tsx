@@ -10,6 +10,7 @@ import PageBodySystem from "./Components/PageBodySystem";
 import Home from "./Pages/Home";
 import Forbidden from "./Components/Forbidden";
 import SellerPage from "./Pages/SellerPage";
+import MultiStepForm from "./Pages/MultiStepForm";
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -57,6 +58,7 @@ function AppRoutes() {
                     <Routes>
                         <Route path="/" element={<SellerPage />} />
                         <Route path="/login" element={<Authentication />} />
+                        <Route path="/cadastro" element={<MultiStepForm />} />
                         <Route element={<PageBodySystem />}>
                             <Route path="/home" element={<ProtectedRoute element={<Home />} />} />
                             <Route path="/forbidden" element={<Forbidden />} />

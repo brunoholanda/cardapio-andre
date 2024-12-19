@@ -14,6 +14,7 @@ const StyledButton = styled.button`
     border: none;
     width: 100%;
     height: 45px;
+    font-weight: 400;
     font-size: 20px;
     border-radius: 10px;
     transition: 0.5s ease;

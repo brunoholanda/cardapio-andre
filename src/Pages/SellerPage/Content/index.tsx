@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   Section,
   Title,
@@ -17,7 +18,9 @@ function Content() {
         <Subtitle>
           Transforme seu negócio e permita que seus clientes acessem seu cardápio através de um QR Code personalizado.
         </Subtitle>
-        <Button href="#cadastro">Comece Agora</Button>
+        <Link to='./cadastro'>
+          <Button>Comece Agora</Button>
+        </Link>
       </Section>
 
       {/* Seção de Recursos */}

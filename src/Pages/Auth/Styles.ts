@@ -92,6 +92,22 @@ export const InputContainer = styled.div`
       color: #aaa;
     }
   }
+
+  .validate-password {
+    margin-top: 10px;
+
+     p {
+    font-size: 12px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+  }
+
+  svg {
+    margin-right: 5px;
+  }
+  }
 `;
 
 export const ForgotPassword = styled.div`
@@ -139,3 +155,68 @@ export const LoadingOverlay = styled.div`
   align-items: center;
   z-index: 9999;
 `;
+
+export const StepIndicator = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+`;
+
+export const Step = styled.div<{ active: boolean }>`
+  font-size: 18px;
+  color: ${(props) => (props.active ? 'var(--laranja-padrao)' : 'var(--cinza-texto)')};
+  font-weight: ${(props) => (props.active ? 'bold' : 'normal')};
+  text-align: center;
+`;
+
+export const ButtonGroup = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  `;
+
+
+export const StepsMessage = styled.div`
+  margin: 1.5rem 0;
+
+  h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  p {
+    color: var(--laranja-padrao);
+    text-align: center;
+  }
+  `;
+
+export const SuggestionsList = styled.ul`
+margin: 0;
+padding: 0;
+list-style: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+background: #fff;
+position: absolute;
+width: 100%;
+max-width: 300px;
+max-height: 150px;
+overflow-y: auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+`;
+
+export const SuggestionItem = styled.li`
+padding: 10px 12px;
+cursor: pointer;
+font-size: 14px;
+color: #333;
+transition: background 0.2s ease, color 0.2s ease;
+
+&:hover {
+  background: var(--laranja-padrao); /* Cor laranja do seu projeto */
+  color: #fff; /* Texto branco ao passar o mouse */
+}
+`;
+
