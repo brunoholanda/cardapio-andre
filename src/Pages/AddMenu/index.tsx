@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Button, Input, message } from 'antd';
 import { PlusOutlined, DeleteOutlined, EyeOutlined, QrcodeOutlined } from '@ant-design/icons';
 import * as S from './Styles';
