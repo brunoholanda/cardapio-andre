@@ -14,7 +14,8 @@
   --cor-de-fundo: #f4f7fb;
   --azul-texto: #30455c;
   --azul-forte: #02075d;
-  --laranja-padrao: #ff7f50;
+  --laranja-padrao: #ff5a00;
+  --laranja-claro: #ff7f50;
 }
 
 .ant-layout-header {
@@ -29,9 +30,11 @@
 .content-margin button {
   margin: 1rem 0rem;
 }
+
 .ant-menu-item-selected {
   background-color: #3f51b5 !important;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -41,7 +44,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  
+
   .tabela {
     margin: 2rem 4rem;
   }
@@ -135,28 +138,36 @@ body {
 
   .ant-modal-body::-webkit-scrollbar {
     width: 5px;
-}
+  }
 
-.ant-modal-body::-webkit-scrollbar-track {
+  .ant-modal-body::-webkit-scrollbar-track {
     background: #f1f1f1;
-}
+  }
 
-.ant-modal-body::-webkit-scrollbar-thumb {
-    background: var(--azul); 
+  .ant-modal-body::-webkit-scrollbar-thumb {
+    background: var(--laranja-padrao);
     border-radius: 8px;
-}
+  }
 
-.ant-modal-body::-webkit-scrollbar-thumb:hover {
-    background: #1677ff;    
-}
+  .ant-modal-body::-webkit-scrollbar-thumb:hover {
+    background: var(--laranja-padrao);
+  }
 
-.ant-tabs-card.ant-tabs-top >.ant-tabs-nav .ant-tabs-tab-active {
-  border-bottom-color: var(--azul) !important;
-}
+  .ant-tabs-card.ant-tabs-top>.ant-tabs-nav .ant-tabs-tab-active {
+    border-bottom-color: var(--laranja-padrao) !important;
+  }
 
-.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: var(--azul) !important;
-}
+  .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--laranja-padrao) !important;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--laranja-padrao) !important; /* Mudar a cor do texto ativo */
+  }
+
+  .ant-tabs-ink-bar {
+    background-color: var(--laranja-padrao) !important; /* Mudar a cor da linha inferior */
+  }
 
   @media (max-width: 768px) {
     .tabela {
@@ -174,7 +185,7 @@ body {
   }
 
   .ant-btn-primary {
-    background-color: var(--azul);
+    background-color: var(--laranja-padrao);
     color: var(--branco);
     font-family: var(--fonte-secundaria);
     font-weight: 500;
@@ -184,10 +195,15 @@ body {
     padding: 4px 15px;
     border-radius: 6px;
   }
-  
+
   .ant-btn-primary:hover {
-    background-color: #4e68fc !important;
+    background-color: #fda43e !important;
   }
+}
+
+.ant-input-outlined:hover {
+  border-color: var(--laranja-padrao);
+  background-color: #ffffff;
 }
 
 code {

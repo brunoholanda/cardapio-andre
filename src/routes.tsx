@@ -11,6 +11,8 @@ import Home from "./Pages/Home";
 import Forbidden from "./Components/Forbidden";
 import SellerPage from "./Pages/SellerPage";
 import MultiStepForm from "./Pages/MultiStepForm";
+import AddMenuPage from "./Pages/AddMenu";
+import PreviewMenuPage from "./Pages/AddMenu/PreviewMenuPage";
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -61,6 +63,8 @@ function AppRoutes() {
                         <Route path="/cadastro" element={<MultiStepForm />} />
                         <Route element={<PageBodySystem />}>
                             <Route path="/home" element={<ProtectedRoute element={<Home />} />} />
+                            <Route path="/configurar-cardapio" element={<ProtectedRoute element={<AddMenuPage />} />} />
+                            <Route path="/preview/:menuId" element={<ProtectedRoute element={<PreviewMenuPage />} />} />
                             <Route path="/forbidden" element={<Forbidden />} />
                             <Route path="*" element={<NotFound />} />
                         </Route>

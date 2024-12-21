@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: .4rem 1rem;
-  background-color: #ff7f50;
+  background-color: var(--laranja-padrao);
 
   img {
     width: 100px;
@@ -35,7 +35,7 @@ export const StyledNav = styled.nav<NavProps>`
   width: 200px;
   transition: left 0.3s ease-in-out;
   padding: 15px;
-  background-color: #ff7f50;
+  background-color: var(--laranja-padrao);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
   z-index: 2;
 `;
